@@ -1,3 +1,5 @@
+import { PulseToken } from "@/types/pulse";
+
 export const HeaderOption = [
   {
     title: "Discover",
@@ -9,15 +11,191 @@ export const HeaderOption = [
     title: "Trackers",
   },
   {
-   title: "Perpetuals"
+    title: "Perpetuals",
   },
   {
-    title: "Yield"
-   },{
-    title: "Vision"
-   },{
-    title: "Portfolio"
-   },{
-    title: "Rewards"
-   },
+    title: "Yield",
+  },
+  {
+    title: "Vision",
+  },
+  {
+    title: "Portfolio",
+  },
+  {
+    title: "Rewards",
+  },
+];
+export const pulseTabs = [
+  { key: "new", label: "New Pairs" },
+  { key: "final", label: "Final Stretch" },
+  { key: "migrated", label: "Migrated" },
+] as const;
+
+type PulseTab = (typeof pulseTabs)[number]["key"];
+
+export const TokenColumns = [
+  {
+    id: "1",
+    title: 'New Pairs',
+  },
+  {
+    id: "2",
+    title: 'Final Stretch',
+  },
+  {
+    id: "3",
+    title: 'Migrated',
+  },
+]
+export const pairs:PulseToken[] = [
+  {
+    id: "1",
+    name: "King of the Hill",
+    img: "/images/download1.png",
+    symbol: "KOTH",
+    addressShort: "7esK...pump",
+    addressFull: "7esKdjndjnjjjnajssjajdd",
+    age: "3s",
+    holders: 1,
+    kols: 0,
+    vip: "0/1",
+    chef: "3",
+    views: 4,
+    userSetting: "5",
+    marketCap: "$4.88k",
+    volume: "$71k",
+    solFees: "0.132",
+    txCount: 5,
+    sniperPercent: 4,
+    bundlePercent: 4,
+  },
+  {
+    id: "2",
+    name: "Solana Rocket",
+    img: "/images/download2.jpg",
+    symbol: "ROCKET",
+    addressShort: "9xQe...sol",
+    addressFull: "9xQeWvG816bUx9EP",
+    age: "12s",
+    holders: 6,
+    kols: 1,
+    vip: "1/2",
+    chef: "3",
+    views: 18,
+    userSetting: "5",
+    marketCap: "$12.4k",
+    volume: "$140k",
+    solFees: "0.287",
+    txCount: 14,
+    sniperPercent: 7,
+    bundlePercent: 2,
+  },
+
+  // ➕ Added objects
+  {
+    id: "3",
+    name: "Pump Factory",
+    img: "/images/download3.jpg",
+    symbol: "PFACT",
+    addressShort: "5AdQ...sol",
+    addressFull: "5AdQ9sKxP8yUQFjDkT",
+    age: "25s",
+    holders: 14,
+    kols: 2,
+    vip: "1/3",
+    chef: "5",
+    views: 42,
+    userSetting: "8",
+    marketCap: "$21.7k",
+    volume: "$310k",
+    solFees: "0.624",
+    txCount: 37,
+    sniperPercent: 11,
+    bundlePercent: 6,
+  },
+  {
+    id: "4",
+    name: "Sol Meme Coin",
+    img: "/images/download4.png",
+    symbol: "SMEME",
+    addressShort: "H9Ks...fun",
+    addressFull: "H9Ks77JgQxEoFnmZ2P",
+    age: "1m",
+    holders: 48,
+    kols: 6,
+    vip: "2/5",
+    chef: "7",
+    views: 96,
+    userSetting: "12",
+    marketCap: "$86.3k",
+    volume: "$1.2M",
+    solFees: "1.84",
+    txCount: 142,
+    sniperPercent: 9,
+    bundlePercent: 3,
+  },
+  {
+    id: "5",
+    name: "Solana Beast",
+    img: "/images/download5.jpeg",
+    symbol: "BEAST",
+    addressShort: "F3Bx...sol",
+    addressFull: "F3Bx8kZpP9c7EoL2xM",
+    age: "3m",
+    holders: 112,
+    kols: 14,
+    vip: "4/10",
+    chef: "12",
+    views: 384,
+    userSetting: "20",
+    marketCap: "$240k",
+    volume: "$3.6M",
+    solFees: "4.92",
+    txCount: 620,
+    sniperPercent: 5,
+    bundlePercent: 1,
+  },
+  {
+    id: "6",
+    name: "Solana Beast",
+    img: "/images/download6.jpg",
+    symbol: "BEAST",
+    addressShort: "F3Bx...sol",
+    addressFull: "F3Bx8kZpP9c7EoL2xM",
+    age: "3m",
+    holders: 112,
+    kols: 14,
+    vip: "4/10",
+    chef: "12",
+    views: 384,
+    userSetting: "20",
+    marketCap: "$240k",
+    volume: "$3.6M",
+    solFees: "4.92",
+    txCount: 620,
+    sniperPercent: 5,
+    bundlePercent: 1,
+  },
+  {
+    id: "7",
+    name: "Solana Beast",
+    img: "/images/download7.png",
+    symbol: "BEAST",
+    addressShort: "F3Bx...sol",
+    addressFull: "F3Bx8kZpP9c7EoL2xM",
+    age: "3m",
+    holders: 112,
+    kols: 14,
+    vip: "4/10",
+    chef: "12",
+    views: 384,
+    userSetting: "20",
+    marketCap: "$240k",
+    volume: "$3.6M",
+    solFees: "4.92",
+    txCount: 620,
+    sniperPercent: 5,
+    bundlePercent: 1,
+  },
 ];

@@ -12,6 +12,7 @@
   --primaryBlueHover: #526fff;
   --textSecondary: #c8c9d1;
   --primaryGreen: #12af80;
+  --backgroundTertiary: #18181a;
 }
 
 @theme inline {
@@ -26,6 +27,7 @@
   --color-primaryBlueHover: var(--primaryBlueHover);
   --color-textSecondary: var(--textSecondary);
   --color-primaryGreen: var(--primaryGreen);
+  --color-backgroundTertiary: var(--backgroundTertiary);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
@@ -42,4 +44,12 @@ button{
 }
 .bg-pump{
   background-color: #53d38e;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
