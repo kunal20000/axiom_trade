@@ -100,7 +100,10 @@ const PulseComponent = () => {
       <div className="flex-1 mt-4 border-primaryStroke bg-backgroundSecondary border hidden lg:flex flex-row w-full justify-start items-start  rounded-lg sm:rounded-sm overflow-hidden">
         {TokenColumns.map((column, index) => {
           return (
-            <div key={index} className="flex flex-1 h-full bg-backgroundSecondary rounded-sm sm:rounded-sm overflow-hidden">
+            <div
+              key={index}
+              className="flex flex-1 h-full bg-backgroundSecondary rounded-sm sm:rounded-sm overflow-hidden"
+            >
               <div className="border-r border-primaryStroke flex flex-1 flex-col h-full justify-start items-center overflow-hidden ">
                 <div className="sticky top-0 z-30 w-full">
                   <div className="hidden sm:flex sticky top-0 z-30 whitespace-nowrap flex-row w-full gap-3 min-h-12 justify-end items-center pr-3 pl-1 lg:pl-3 xl:pl-3 border-b border-primaryStroke">
@@ -193,11 +196,22 @@ const PulseComponent = () => {
       </div>
       <div className="flex-1 mt-4 border-primaryStroke bg-backgroundSecondary border sm:flex hidden lg:hidden flex-row w-full justify-start items-start  rounded-lg sm:rounded-sm overflow-hidden">
         <Tabs defaultValue="new-pairs" className="w-full">
-          <TabsList className="w-full ">
-            <div className="border-b-2 border-b-primaryStroke justify-start pt-0.5 !gap-2 !w-full">
-              <TabsTrigger className="h-10 text-base" value="new-pairs">New Pairs</TabsTrigger>
-              <TabsTrigger className="h-10 text-base"  value="final-stretch">Final Stretch</TabsTrigger>
-              <TabsTrigger className="h-10 text-base"  value="migrated">Migrated</TabsTrigger>
+          <TabsList className="w-full">
+            <div className="border-b-2 border-b-primaryStroke flex justify-between items-center pt-0.5 !gap-2 !w-full">
+              <div className="">
+                <TabsTrigger className="h-10 text-base" value="new-pairs">
+                  New Pairs
+                </TabsTrigger>
+                <TabsTrigger className="h-10 text-base" value="final-stretch">
+                  Final Stretch
+                </TabsTrigger>
+                <TabsTrigger className="h-10 text-base" value="migrated">
+                  Migrated
+                </TabsTrigger>
+              </div>
+              <div className="flex flex-row p-1 w-6 h-6 justify-center items-center transition-opacity duration-150 ease-in-out cursor-pointer rounded-lg sm:rounded-sm relative hover:bg-primaryStroke/30">
+                <RiEqualizer3Fill color="#c8c9d1" />
+              </div>
             </div>
           </TabsList>
           <TabsContent value="new-pairs">

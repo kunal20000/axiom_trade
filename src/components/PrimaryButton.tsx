@@ -23,9 +23,9 @@ const PrimaryButton = ({
       onClick={onClick}
       disabled={disabled}
       className={`
-        flex items-center justify-center gap-2
+        flex shrink-0 items-center justify-center gap-2
         bg-primaryBlue text-black
-        rounded-full px-3 h-[32px]
+        rounded-full px-3 h-8
         font-bold text-sm
         transition-colors duration-150
         hover:bg-primaryBlue/90
@@ -34,7 +34,7 @@ const PrimaryButton = ({
       `}
     >
       {icon && <span className="shrink-0">{icon}</span>}
-      <span>{label}</span>
+      <span className="whitespace-nowrap">{label}</span>
     </button>
   );
 };
