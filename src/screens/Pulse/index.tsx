@@ -76,21 +76,21 @@ const PulseComponent = () => {
           </div>
           {activeTab === "new" && (
             <div className="sm:hidden mt-4 w-full border border-primaryStroke bg-backgroundSecondary rounded-lg overflow-hidden">
-              <div className="h-125 w-full  overflow-y-auto">
+              <div className="sm:h-125 w-full  overflow-y-auto">
                 <PulseTokenCard />
               </div>
             </div>
           )}
           {activeTab === "final" && (
             <div className="sm:hidden mt-4 w-full border border-primaryStroke bg-backgroundSecondary rounded-lg overflow-hidden">
-              <div className="h-125 w-full overflow-y-auto">
+              <div className="sm:h-125 w-full overflow-y-auto">
                 <PulseTokenCard />
               </div>
             </div>
           )}
           {activeTab === "migrated" && (
             <div className="sm:hidden mt-4 w-full border border-primaryStroke bg-backgroundSecondary rounded-lg overflow-hidden">
-              <div className="h-125 w-full overflow-y-auto">
+              <div className="sm:h-125 w-full overflow-y-auto">
                 <PulseTokenCard />
               </div>
             </div>
@@ -134,65 +134,6 @@ const PulseComponent = () => {
             </div>
           );
         })}
-
-        {/* <div className="flex flex-1 h-full bg-backgroundSecondary rounded-sm sm:rounded-sm overflow-hidden">
-          <div className="border-r border-primaryStroke flex flex-1 flex-col h-full justify-start items-center overflow-hidden ">
-            <div className="sticky top-0 z-30 w-full">
-              <div className="hidden sm:flex sticky top-0 z-30 whitespace-nowrap flex-row w-full gap-3 min-h-12 justify-end items-center pr-3 pl-1 lg:pl-3 xl:pl-3 border-b border-primaryStroke">
-                <div className="flex flex-row items-center gap-4 flex-1">
-                  <span className="text-textPrimary text-[16px] font-medium flex-1">
-                    Final Stretch
-                  </span>
-                </div>
-                <InputWithSolana />
-                <AppTooltip
-                  trigger={
-                    <div className="flex flex-row p-1 w-6 h-6 justify-center items-center transition-opacity duration-150 ease-in-out cursor-pointer rounded-lg sm:rounded-sm relative hover:bg-primaryStroke/30">
-                      <RiEqualizer3Fill color="#c8c9d1" />
-                    </div>
-                  }
-                  content={
-                    <p className="flex items-center text-textSecondary gap-1 text-xs">
-                      Filters
-                    </p>
-                  }
-                />
-              </div>
-            </div>
-            <div className="h-125 w-full overflow-y-auto scrollbar-hide">
-              <PulseTokenCard />
-            </div>
-          </div>
-        </div>
-        <div className="flex flex-1 h-full bg-backgroundSecondary rounded-sm sm:rounded-sm overflow-hidden">
-          <div className="border-r border-primaryStroke flex flex-1 flex-col h-full justify-start items-center overflow-hidden ">
-            <div className="sticky top-0 z-30 w-full">
-              <div className=" hidden sm:flex sticky top-0 z-30 whitespace-nowrap flex-row w-full gap-3 min-h-12 justify-end items-center pr-3 pl-1 lg:pl-3 xl:pl-3 border-b border-primaryStroke">
-                <div className="flex flex-row items-center gap-4 flex-1">
-                  <span className="text-textPrimary text-[16px] font-medium flex-1">
-                    Migrated
-                  </span>
-                </div>
-                <InputWithSolana />
-                <AppTooltip
-                  trigger={
-                    <div className="flex flex-row p-1 w-6 h-6 justify-center items-center transition-opacity duration-150 ease-in-out cursor-pointer rounded-lg sm:rounded-sm relative hover:bg-primaryStroke/30">
-                      <RiEqualizer3Fill color="#c8c9d1" />
-                    </div>
-                  }
-                  content={
-                    <p className="flex items-center text-textSecondary gap-1 text-xs">
-                      Filters
-                    </p>
-                  }
-                />
-              </div>
-            </div>
-            <div className="h-125 w-full overflow-y-auto scrollbar-hide">
-              <PulseTokenCard />
-            </div>
-          </div>
-        </div> */}
       </div>
       <div className="flex-1 mt-4 border-primaryStroke bg-backgroundSecondary border sm:flex hidden lg:hidden flex-row w-full justify-start items-start  rounded-lg sm:rounded-sm overflow-hidden">
         <Tabs defaultValue="new-pairs" className="w-full">
