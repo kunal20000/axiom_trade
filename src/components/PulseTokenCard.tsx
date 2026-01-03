@@ -22,6 +22,8 @@ import { pairs } from "@/consts/data";
 import { PulseToken } from "@/types/pulse";
 import { useEffect, useState } from "react";
 import PulseTokenSkeleton from "./PulseTokenSkeleton";
+import toast from "react-hot-toast";
+import { showCopyToast } from "./ShowCopyToast";
 
 const PulseTokenCard = () => {
   const [loading, setLoading] = useState(true);
@@ -152,10 +154,18 @@ const PulseTokenCard = () => {
                         <AppTooltip
                           trigger={
                             <div className="flex gap-1 whitespace-nowrap truncate flex-nowrap text-textTertiary hover:text-primaryBlueHover text-[16px] lg:text-[14px] xl:text-[16px] font-medium tracking-[-0.02em] cursor-pointer">
-                              <span className="max-[375px]:w-5 min-[1024px]:max-[1092px]:w-5  truncate">
+                              <span className="max-[390px]:w-5 min-[1024px]:max-[1092px]:w-5  truncate">
                                 {item.name}
                               </span>
-                              <RiFileCopyLine className="shrink-0 mt-1" />
+                              <RiFileCopyLine
+                                onClick={() => {
+                                  navigator.clipboard.writeText(
+                                    item.name
+                                  );
+                                  showCopyToast("Address copied to clipboard");
+                                }}
+                                className="shrink-0 mt-1"
+                              />
                             </div>
                           }
                           content={
@@ -332,7 +342,7 @@ const PulseTokenCard = () => {
                     <div className="hidden group-hover:block">
                       <PrimaryButton
                         label="0 SOL"
-                        className="!py-0.5 !px-3 text-[12px] h-6 whitespace-nowrap"
+                        className="!py-0.5 !px-3 text-[12px] !h-6 whitespace-nowrap"
                         icon={<RiFlashlightFill />}
                       />
                     </div>
