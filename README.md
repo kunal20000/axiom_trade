@@ -1,3 +1,9 @@
+
+<img width="640" height="2526" alt="axiom-trade-chi vercel app_" src="https://github.com/user-attachments/assets/fb7f6d27-a01a-48b7-8f6b-5371c7ef7917" />
+
+<img width="750" height="2230" alt="axiom-trade-chi vercel app_(iPhone SE) (1)" src="https://github.com/user-attachments/assets/790c0512-4e6d-4e17-90ca-8d4f9da93819" />
+
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
